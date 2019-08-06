@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import unittest
-import steam_market as sm
+import steammarket as sm
 
 class TestTF2Items(unittest.TestCase):
     def runTest(self):
@@ -22,10 +22,10 @@ class TestTF2Items(unittest.TestCase):
         for item in tf2_items:
             print(item)
             market_item = sm.get_tf2_item(item)
-            print([i.price for i in market_item.listings])
+            print(market_item["lowest_price"])
 
         print('\nTesting CS:GO Items:\n')
         for item in csgo_items:
             print(item)
             market_item = sm.get_csgo_item(item)
-            print([i.price for i in market_item.listings])
+            print(market_item["lowest_price"])

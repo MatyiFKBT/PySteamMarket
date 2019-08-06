@@ -1,4 +1,4 @@
-import requests, urllib
+import requests
 
 '''
 TODO:
