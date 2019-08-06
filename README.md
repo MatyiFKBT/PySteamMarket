@@ -1,8 +1,27 @@
 # steammarket
 
 Python module to quickly get item prices from Steam Marketplace.
+# Installation
+`pip install steammarket`
 
-# steammarket.steammarket
+OR
+
+```bash
+git clone https://github.com/MatyiFKBT/pysteammarket
+cd pysteammarket
+python setup.py install
+```
+
+# Usage
+
+## Example
+```python
+import steammarket as sm
+
+item = sm.get_tf2_item('Strange Professional Killstreak Scattergun')
+for listing in item.listings:
+    print(listing.price)
+```
 
 ## get_item
 
@@ -57,13 +76,3 @@ get_csgo_item(item, currency='EUR')
 ```
 
 Fetches an item from CSGO. (Defaults the `appid` to 730)
-
-# Usage
-
-```python
-import steam_market as sm
-
-item = sm.get_tf2_item('Strange Professional Killstreak Scattergun')
-for listing in item.listings:
-    print(listing.price)
-```
