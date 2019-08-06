@@ -10,7 +10,7 @@ with open("docs.md", "r") as fh:
 setup(
     name = 'steammarket',
     packages = ['steammarket'],
-    version = '0.2.1',
+    version = '0.2.2',
     description = 'A Python API for getting prices from the Steam market.',
     author = 'Matyi',
     author_email = 'mmatyi@caesar.elte.hu',
