@@ -48,6 +48,7 @@ def get_item(appid, name, currency='EUR'):
     return market_item.json()
 
 def get_multiple(items,appid=440,currency='EUR'):
+    """Fetch multiple items using get_item()."""
     result ={}
     for item in items:
         result[item] = get_item(appid,item,currency)
