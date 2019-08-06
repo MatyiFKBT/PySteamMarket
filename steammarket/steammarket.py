@@ -24,20 +24,25 @@ def get_item(appid, name, currency='EUR'):
     Gets item listings from the `Steam Marketplace`.
 
     @appid ID of game item belongs to.
-    @param name: Name of item to lookup.
-    @param currency: Abbreviation of currency to return listing prices in.
-    @type currency:
-        Accepted currencies:
-        - USD
-        - GBP
-        - EUR
-        - CHF
-        - RUB
-        - KRW
-        - CAD
-        Defaults to EUR.
-        Please lookup the proper abbreviation for your currency of choice.
-    @return A json object with the lowest price,volume, and median price of the chosen item.
+
+    @name: Name of item to lookup.
+    
+    @currency: Abbreviation of currency to return listing prices in.
+    Accepted currencies:`USD,GBP,EUR,CHF,RUB,KRW,CAD`
+    
+    Defaults to `EUR`.
+    Please lookup the proper abbreviation for your currency of choice.
+    
+    Returns a json object
+    Example:
+    ```
+    {
+        "success": true,
+        "lowest_price": "0,92€",
+        "volume": "15",
+        "median_price": "0,80€"
+    }
+    ```
     """
     url = 'http://steamcommunity.com//market/priceoverview'
     market_item = requests.get(url,params={
@@ -54,6 +59,8 @@ def get_multiple(items,appid=440,currency='EUR'):
         result[item] = get_item(appid,item,currency)
     return result
 def get_tf2_item(item, currency='EUR'):
+    """Fetches an item from TF2. (Defaults the `appid` to 440)"""
     return get_item('440', item, currency)
 def get_csgo_item(item, currency='EUR'):
+    """Fetches an item from CSGO. (Defaults the `appid` to 730)"""
     return get_item('730', item, currency)
