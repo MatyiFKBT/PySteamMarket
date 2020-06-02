@@ -2,7 +2,7 @@
 
 Python module to quickly get item prices from Steam Marketplace.
 
-# Installation
+## Installation
 
 `pip install steammarket`
 
@@ -14,9 +14,9 @@ cd pysteammarket
 python setup.py install
 ```
 
-# Usage
+## Usage
 
-## Example
+### Example
 
 ```python
 import steammarket as sm
@@ -26,7 +26,7 @@ for listing in item.listings:
     print(listing.price)
 ```
 
-## get_item
+### get_item
 
 ```python
 get_item(appid, name, currency='EUR')
@@ -56,7 +56,7 @@ Example:
 }
 ```
 
-## get_multiple
+### get_multiple
 
 ```python
 get_multiple(items, appid=440, currency='EUR')
@@ -64,7 +64,7 @@ get_multiple(items, appid=440, currency='EUR')
 
 Fetch multiple items using get_item().
 
-## get_tf2_item
+### get_tf2_item
 
 ```python
 get_tf2_item(item, currency='EUR')
@@ -72,7 +72,7 @@ get_tf2_item(item, currency='EUR')
 
 Fetches an item from TF2. (Defaults the `appid` to 440)
 
-## get_csgo_item
+### get_csgo_item
 
 ```python
 get_csgo_item(item, currency='EUR')
