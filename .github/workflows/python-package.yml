@@ -3,7 +3,11 @@
 
 name: Python package test 📦
 
-on: [push, pull_request]
+on: 
+  push:
+    paths:
+      - '**.py'
+  pull_request:
 
 jobs:
   build:
