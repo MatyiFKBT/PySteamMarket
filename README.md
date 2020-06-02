@@ -1,7 +1,9 @@
 # steammarket
 
 Python module to quickly get item prices from Steam Marketplace.
+
 # Installation
+
 `pip install steammarket`
 
 OR
@@ -15,6 +17,7 @@ python setup.py install
 # Usage
 
 ## Example
+
 ```python
 import steammarket as sm
 
