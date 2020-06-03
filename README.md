@@ -36,7 +36,7 @@ Gets item listings from the `Steam Marketplace`.
 
 @appid ID of game item belongs to.
 
-@name: Name of item to lookup.
+@name: Name of item to lookup. Use the exact name from the community market.
 
 @currency: Abbreviation of currency to return listing prices in.
 Accepted currencies:`USD,GBP,EUR,CHF,RUB,KRW,CAD`
