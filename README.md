@@ -16,7 +16,7 @@ python setup.py install
 
 ## Usage
 
-### Example
+### Example in TF2
 
 ```python
 import steammarket as sm
