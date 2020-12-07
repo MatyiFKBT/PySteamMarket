@@ -27,3 +27,10 @@ class TestTF2Items(unittest.TestCase):
             print(item)
             market_item = sm.get_csgo_item(item)
             print(market_item["lowest_price"])
+
+        print('\nTesting render function for CS:GO Items:\n')
+        csgo_render = sm.get_render(730, count=1, start=0)
+        print(csgo_render["results"][0]["name"])
+        
+        print('\nTesting total count of listed items from CS:GO\n')
+        print(sm.get_total_count(730))
