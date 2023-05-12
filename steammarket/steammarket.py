@@ -15,6 +15,7 @@ curAbbrev = {
     'EUR' : 3,
     'CHF' : 4,
     'RUB' : 5,
+    'BRL' : 7,
     'KRW' : 16,
     'CAD' : 20,
 }
