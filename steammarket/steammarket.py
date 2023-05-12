@@ -1,4 +1,5 @@
 import requests
+from time import sleep
 
 '''
 TODO:
@@ -15,6 +16,7 @@ curAbbrev = {
     'EUR' : 3,
     'CHF' : 4,
     'RUB' : 5,
+    'BRL' : 7,
     'KRW' : 16,
     'CAD' : 20,
 }
@@ -50,7 +52,11 @@ def get_item(appid, name, currency='EUR'):
         'market_hash_name': name,
         'currency': curAbbrev[currency]        
     })
-    return market_item.json()
+    if market_item.status_code == 200:
+        return market_item.json()
+    else:
+        sleep(60)
+        return get_item(appid,name,currency)
 
 def get_multiple(items,appid=440,currency='EUR'):
     """Fetch multiple items using get_item()."""
