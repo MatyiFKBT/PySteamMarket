@@ -1,0 +1,21 @@
+[project]
+name = "pysteammarket"
+version = "2.0.0b"
+authors = [{name= "Matyi", email="mmatyi@caesar.elte.hu"}]
+description = "A Python API for getting prices from the Steam market."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.32.3",
+]
+
+[dependency-groups]
+dev = [
+    "flake8>=7.1.1",
+    "pytest>=8.3.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/matyifkbt/PySteamMarket"
+Issues = "https://github.com/matyifkbt/pysteammarket/issues"
+Changelog = "https://github.com/matyifkbt/pysteammarket/blob/master/CHANGELOG.md"
