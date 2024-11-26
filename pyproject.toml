@@ -1,6 +1,6 @@
 [project]
 name = "steammarket"
-version = "2.0.0b"
+version = "2.0.0pre"
 authors = [{name= "Matyi", email="mmatyi@caesar.elte.hu"}]
 description = "A Python API for getting prices from the Steam market."
 readme = "README.md"
