@@ -8,10 +8,13 @@ Python module to quickly get item prices from Steam Marketplace.
 
 OR
 
+## Development
+
 ```bash
 git clone https://github.com/MatyiFKBT/pysteammarket
 cd pysteammarket
-python setup.py install
+uv sync
+uv run pytest
 ```
 
 ## Usage
