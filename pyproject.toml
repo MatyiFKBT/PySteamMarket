@@ -9,6 +9,10 @@ dependencies = [
     "requests>=2.32.3",
 ]
 
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [dependency-groups]
 dev = [
     "flake8>=7.1.1",

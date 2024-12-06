@@ -209,7 +209,7 @@ wheels = [
 [[package]]
 name = "steammarket"
 version = "2.0.0rc0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "requests" },
 ]
